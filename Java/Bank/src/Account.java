@@ -20,7 +20,8 @@ public class Account {
     }
 
     public void withdraw(double amt) {
-        this.balance -= amt;
+        if(amt<=balance)
+            balance -= amt;
     }
 
     public String toString(){
